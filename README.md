@@ -28,6 +28,11 @@ I use a trick solution :blush:
 It need to know how to solve the `Matrix` datastructure or **2D** structure.
 :smiley:
 
+### Day 3
+
+It's too hard for me to implement spiral and i founded abstract to practice is a long way.
+the second part make me hard. it use the _hashmap_ and more high order function to make it elegant.
+
 ## ScreenShots
 
 ![pic](Assets/example.jpg)
