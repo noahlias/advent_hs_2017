@@ -18,6 +18,8 @@ rotate _ [] = []
 
 ---- how to understand the rotate
 rotate n xs = zipWith const (drop n (cycle xs)) xs
+
+
 part1 xs = sum $ zipWith (\x y -> if x == y then digitToInt x else 0) xs (rotate 1 xs)
 
 -- My first implement i think it's too ugly

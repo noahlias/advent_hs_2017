@@ -33,6 +33,20 @@ It need to know how to solve the `Matrix` datastructure or **2D** structure.
 It's too hard for me to implement spiral and i founded abstract to practice is a long way.
 the second part make me hard. it use the _hashmap_ and more high order function to make it elegant:sob:.
 
+## Day 4
+
+:yum: It needs some knowledge about the `Set` and needs know something about the [**nub**](https://hoogle.haskell.org/?hoogle=nub) function. but it's have  O(N^2) complexity.
+then i found the other algorithm on [Stackoverflow](https://stackoverflow.com/questions/16108714/removing-duplicates-from-a-list-in-haskell-without-elem)
+
+- The original solution is too Un-Haskell(aha step by step).
+- The second solution comes from the **AI (ChatGPT)**,which use the classical *List Comprehension*
+
+```haskell
+part1 xs = length [x | x <- map (splitOn " ") (splitOn "\n" xs), length (nub x) == length x]
+
+part2 xs = length [x | x <- map (splitOn " ") (splitOn "\n" xs), length (setdups x) == length x]
+```
+
 ## ScreenShots
 
 ![pic](Assets/example.jpg)
