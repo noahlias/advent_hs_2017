@@ -47,6 +47,18 @@ part1 xs = length [x | x <- map (splitOn " ") (splitOn "\n" xs), length (nub x) 
 part2 xs = length [x | x <- map (splitOn " ") (splitOn "\n" xs), length (setdups x) == length x]
 ```
 
+## Day 5
+
+Use a abstact python code to get the answer.
+I am not good at **Haskell**.
+
+![day5](https://i.imgur.com/wJAqNjM.jpg)
+
+if you use `runhaskell` to get the result. It will comes to a **stack overflow** error.
+
+And you compiled it to run you will find it would got the answer.
+I think this is about the _Loop_.:wink:
+
 ## ScreenShots
 
 ![pic](Assets/example.jpg)
