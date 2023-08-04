@@ -35,11 +35,11 @@ the second part make me hard. it use the _hashmap_ and more high order function 
 
 ## Day 4
 
-:yum: It needs some knowledge about the `Set` and needs know something about the [**nub**](https://hoogle.haskell.org/?hoogle=nub) function. but it's have  O(N^2) complexity.
+:yum: It needs some knowledge about the `Set` and needs know something about the [**nub**](https://hoogle.haskell.org/?hoogle=nub) function. but it's have O(N^2) complexity.
 then i found the other algorithm on [Stackoverflow](https://stackoverflow.com/questions/16108714/removing-duplicates-from-a-list-in-haskell-without-elem)
 
 - The original solution is too Un-Haskell(aha step by step).
-- The second solution comes from the **AI (ChatGPT)**,which use the classical *List Comprehension*
+- The second solution comes from the **AI (ChatGPT)**,which use the classical _List Comprehension_
 
 ```haskell
 part1 xs = length [x | x <- map (splitOn " ") (splitOn "\n" xs), length (nub x) == length x]
@@ -58,6 +58,12 @@ if you use `runhaskell` to get the result. It will comes to a **stack overflow**
 
 And you compiled it to run you will find it would got the answer.
 I think this is about the _Loop_.:wink:
+
+## Day 6
+
+Oh, It seems more complicated than before:scream:
+So I used **Python** to implement it and use **GPT-4** to translate it.
+![day6](https://i.imgur.com/tNqJR0R.jpg)
 
 ## ScreenShots
 
